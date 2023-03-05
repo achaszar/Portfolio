@@ -1,0 +1,51 @@
+﻿@model GenPasswordViewModel
+
+@{
+}
+<h1 style="text-align: center">Password Generator</h1>
+<p style="text-align: center">The password generator has the default value of lowercase letters and numbers. You get to choose if you would like uppercase letters and/or symbols
+    along with the password length. 
+</p>
+<div class="text-center form-control">
+    <form method="post" action="~/PasswordGenerator/GeneratePassword">
+        <div class="mb-3">
+            <div>
+                <label for="length" class="form-label">Password Length: </label>
+            </div>
+            <div>
+                <input type="number" class="align-content-md-center" id="length" name="length" value="12">
+            </div>
+        </div>
+        <div class="mb-3 form-check">
+            <div>
+                <label class="form-check-label" for="wantUpper">Do you want uppercase Letters in your password?</label>
+            </div>
+            <div class="align-content-center">
+                <input type="checkbox" id="wantUpper" name="wantUpper" value="true" checked>
+            </div>
+        </div>
+        <div class="mb-3 form-check">
+            <div>
+                <label class="form-check-label" for="wantSymbols">Do you want symbols in the password?</label>
+            </div>
+            <div class="align-content-center">
+                <input type="checkbox" id="wantSymbols" name="wantSymbols" value="true">                
+            </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Generate Password</button>
+    </form>
+    <div class="text-center">
+        <h3>
+            Your generated password is:
+        </h3>
+        </br>
+        <h2 style="color:orangered" id="myInput">
+            @Model.PasswordResult
+        </h2>
+        <div>
+            @*<input type="text" value="@Model.PasswordResult" id="myInput">*@
+            <button onclick="myFunction()">Copy text</button>
+        </div>
+    </div>
+</div>
