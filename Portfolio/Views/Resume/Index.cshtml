@@ -1,0 +1,127 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<html>
+<head>
+	<title>Austin's Resume</title>
+</head>
+<style>
+
+	h1 {
+		font-size: 50px;
+	}
+
+	div.header {
+		margin: 20px;
+		text-align: center;
+		background-color: orange;
+		padding: 30px;
+		border-style: solid;
+		border-color: black;
+	}
+
+	div.education {
+		float: left;
+		width: 33%;
+		background-color: dodgerblue;
+		padding: 20px;
+		border: solid;
+	}
+
+	div.experience {
+		float: left;
+		text-align: left;
+		background-color: hotpink;
+		width: 33%;
+		padding: 20px;
+		border: solid;
+		margin-left: 5px;
+	}
+
+	div.skills {
+		float: left;
+		text-align: left;
+		background-color: yellowgreen;
+		width: 33%;
+		padding: 20px;
+		border: solid;
+		margin-left: 5px;
+	}
+
+	section::after {
+		content: "";
+		display: table;
+		clear: both;
+		padding: 5px;
+	}
+</style>
+<body>
+	<div class="header">
+		<h1>Austin Chaszar</h1>
+		<p>
+			<b>
+				Email: awchaszar@gmail.com   |   Cell: (609)647-9070   |
+				Address: 714 Mooring Road 201C Ocean City, MD 21842
+			</b>
+		</p>
+		<img src="~/css/me.JPG" alt="me" width="200" height="250">
+		</br>
+		<p>
+			<a href="https://github.com/achaszar" target="_blank">My Github</a>           |
+			<a href="https://www.linkedin.com/in/austin-chaszar-778500159/" target="_blank">My Linkedin</a>
+		</p>
+
+	</div>
+	<section>
+		<div class="education">
+			<h3>Education:</h3>
+			<h4>The Programmer Coach ~ <i>Jun 2023 - Feb 2023</i></h4>
+			<p>
+
+			</p>
+			<h4>Arkansas State University ~ <i>Jan 2019 - Dec 2019</i></h4>
+			<p>Masters in Sport Administration</p>
+			<h4>Keystone College ~ <i>Aug 2014 - May 2018</i></h4>
+			<p>Bachelors in Sports Recreation & management</p>
+			<p>Minor in Business</br>Minor in Management</p>
+		</div>
+		<div class="experience">
+			<h3>Experience:</h3>
+			<h5>Full-Stack Software Developer ~ <i>Jun 2022 - Present</i></h5>
+			<h6><i>Elite Devz / Internship / Remote</i></h6>
+			<p>
+				<ul>
+					<li>
+						Worked on an Internal Web Based Application that was for a Crawler project. The
+						Crawler was designed to crawl any set of websites and was extremely configurable.
+					</li>
+					<li>
+						Stack Utilized: C#, .NET5, ASP.NET, MVC and Web API’s, SQL Server, HTML, CSS,
+						JavaScript.
+					</li>
+				</ul>
+			</p>
+			<h5>Instructional Assistant III ~ <i>Sept 2022 - Present</i></h5>
+			<h6><i>Prince Street Elementry</i></h6>
+			<p>
+				<ul>
+					<li>
+						Assist teachers with daily lesson plans, help scholars with their class work, and
+						assist with before and after school scholar arrival and departure.
+					</li>
+				</ul>
+			</p>
+		</div>
+		<div class="skills">
+			<h3>Skills:</h3>
+			<h5>Languages -</h5>
+			<p>C#, SQL (SQL Server), HTML, CSS, JavaScript</p>
+			<h5>Technologies</h5>
+			<p>OOP, .NET, ASP.NET MVC, Unit Testing, Entity Framework</p>
+			<h5>Software and Systems</h5>
+			<p>Visual Studio, Microsoft SQL Server, Git, GitHub</p>
+		</div>
+	</section>
+</body>
+</html>

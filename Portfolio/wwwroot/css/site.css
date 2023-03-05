@@ -1,0 +1,31 @@
+html {
+  font-size: 14px;
+  border: solid;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-image: url("thisbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: blanchedalmond;
+}
+
+footer {
+    text-align: center;
+}
+
+div.entirePage {
+    color: white;
+}
