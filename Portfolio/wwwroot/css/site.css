@@ -15,11 +15,12 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-  background-image: url("thisbackground.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: white;
+    margin-bottom: 60px;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    background-attachment: fixed;
 }
 
 footer {
