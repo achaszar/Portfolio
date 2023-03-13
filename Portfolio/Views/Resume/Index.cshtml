@@ -1,60 +1,11 @@
 ﻿@{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Resume";
 }
 
 <html>
 <head>
 	<title>Austin's Resume</title>
 </head>
-<style>
-
-	h1 {
-		font-size: 50px;
-	}
-
-	div.header {
-		margin: 20px;
-		text-align: center;
-		background-color: orange;
-		padding: 30px;
-		border-style: solid;
-		border-color: black;
-	}
-
-	div.education {
-		float: left;
-		width: 33%;
-		background-color: dodgerblue;
-		padding: 20px;
-		border: solid;
-		margin-left: 5px;
-	}
-
-	div.experience {
-		float: left;
-		text-align: left;
-		background-color: hotpink;
-		width: 33%;
-		padding: 20px;
-		border: solid;
-		margin-left: 5px;
-	}
-
-	div.skills {
-		float: left;
-		background-color: yellowgreen;
-		width: 33%;
-		padding: 20px;
-		border: solid;
-	}
-
-	section::after {
-		content: "";
-		display: table;
-		clear: both;
-		padding: 5px;
-	}
-</style>
 <body>
 	<div class="header">
 		<h1>Austin Chaszar</h1>
@@ -64,7 +15,10 @@
 				Address: 714 Mooring Road 201C Ocean City, MD 21842
 			</b>
 		</p>
-		<img src="~/css/me.JPG" alt="me" width="200" height="250">
+		<img src="~/css/me.JPG" alt="me" width="200" height="250" usemap="#me" />
+		<map name="me"> 
+		<area shape="rect" coords="0, 0, 200, 250" href="https://www.google.com" target="_blank"/>
+		</map>
 		</br>
 		<p>
 			</br>

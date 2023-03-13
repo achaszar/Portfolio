@@ -30,3 +30,50 @@ footer {
 div.entirePage {
     color: white;
 }
+
+h1 {
+    font-size: 50px;
+}
+
+div.header {
+    margin: 20px;
+    text-align: center;
+    background-color: orange;
+    padding: 30px;
+    border-style: solid;
+    border-color: black;
+}
+
+div.education {
+    float: left;
+    width: 33%;
+    background-color: dodgerblue;
+    padding: 20px;
+    border: solid;
+    margin-left: 5px;
+}
+
+div.experience {
+    float: left;
+    text-align: left;
+    background-color: hotpink;
+    width: 33%;
+    padding: 20px;
+    border: solid;
+    margin-left: 5px;
+}
+
+div.skills {
+    float: left;
+    background-color: yellowgreen;
+    width: 33%;
+    padding: 20px;
+    border: solid;
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 5px;
+}

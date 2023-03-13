@@ -8,15 +8,10 @@
 
   <ItemGroup>
     <None Remove="Views\me.JPG" />
-    <None Remove="Views\background.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Views\me.JPG">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Include="Views\background.jpg">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
