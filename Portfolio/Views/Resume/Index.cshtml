@@ -7,7 +7,8 @@
 	<title>Austin's Resume</title>
 </head>
 <body>
-	<div class="header">
+	<div class="flex-container">
+		<div>
 		<h1>Austin Chaszar</h1>
 		<p>
 			<b>
@@ -15,20 +16,22 @@
 				Address: 714 Mooring Road 201C Ocean City, MD 21842
 			</b>
 		</p>
-		<img src="~/css/me.JPG" alt="me" width="200" height="250" usemap="#me" />
+		<img src="~/css/me.JPG" alt="me" width="200" height="250" usemap="#me" style="border: solid; border-color: white;"/>
 		<map name="me"> 
 		<area shape="rect" coords="0, 0, 200, 250" href="https://www.google.com" target="_blank"/>
 		</map>
-		</br>
+		<br />
+		<br />
 		<p>
-			</br>
 			<input type="button" value="My Github" onclick="openGithub()" />          |
 			<input type="button" value="My Linkedin" onclick="openLinkedin()" />
 		</p>
-
+		</div>
 	</div>
+
 	<section>
-		<div class="skills">
+		<div class="smallflex-container">
+		<div class="flex-item-left">
 			<h3>Skills:</h3>
 			<h5>Languages -</h5>
 			<p>C#, SQL (SQL Server), HTML, CSS, JavaScript</p>
@@ -37,7 +40,7 @@
 			<h5>Software and Systems</h5>
 			<p>Visual Studio, Microsoft SQL Server, Git, GitHub</p>
 		</div>
-		<div class="experience">
+		<div class="flex-item-center">
 			<h3>Experience:</h3>
 			<h5>Full-Stack Software Developer ~ <i>Jun 2022 - Present</i></h5>
 			<h6><i>Elite Devz / Internship / Remote</i></h6>
@@ -63,8 +66,10 @@
 					</li>
 				</ul>
 			</p>
+				
 		</div>
-		<div class="education">
+		<div class="flex-item-right">
+				
 			<h3>Education:</h3>
 			<h4>The Programmer Coach ~ <i>Jun 2023 - Feb 2023</i></h4>
 			<p>
@@ -75,7 +80,9 @@
 			<h4>Keystone College ~ <i>Aug 2014 - May 2018</i></h4>
 			<p>Bachelors in Sports Recreation & management</p>
 			<p>Minor in Business</br>Minor in Management</p>
+				
+	</div>
 		</div>
-	</section>
+		</section>	
 </body>
 </html>

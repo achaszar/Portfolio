@@ -16,7 +16,7 @@ html {
 
 body {
     margin-bottom: 60px;
-    background-image: url("background.jpg");
+    background-image: url("mybackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -35,40 +35,14 @@ h1 {
     font-size: 50px;
 }
 
-div.header {
-    margin: 20px;
+#headera {
+    margin: 15px;
+    width: 70%;
     text-align: center;
-    background-color: orange;
     padding: 30px;
     border-style: solid;
     border-color: black;
-}
-
-div.education {
-    float: left;
-    width: 33%;
-    background-color: dodgerblue;
-    padding: 20px;
-    border: solid;
-    margin-left: 5px;
-}
-
-div.experience {
-    float: left;
-    text-align: left;
-    background-color: hotpink;
-    width: 33%;
-    padding: 20px;
-    border: solid;
-    margin-left: 5px;
-}
-
-div.skills {
-    float: left;
-    background-color: yellowgreen;
-    width: 33%;
-    padding: 20px;
-    border: solid;
+    background-color: orange;
 }
 
 section::after {
@@ -76,4 +50,64 @@ section::after {
     display: table;
     clear: both;
     padding: 5px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    border: solid;
+    border-color: white;
+}
+
+.flex-container > div {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.smallflex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-item-left {
+    padding: 10px;
+    flex: 33%;
+    font-size: 14px;
+    text-align: left;
+    border: solid;
+    border-color: white;
+}
+
+.flex-item-center {
+    padding: 10px;
+    flex: 33%;
+    font-size: 14px;
+    text-align: left;
+    border: solid;
+    border-color: white;
+}
+
+.flex-item-right {
+    padding: 10px;
+    flex: 33%;
+    font-size: 14px;
+    text-align: left;
+    border: solid;
+    border-color: white;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: row;
+    }
 }

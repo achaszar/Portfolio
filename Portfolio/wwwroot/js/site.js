@@ -3,7 +3,7 @@
 }
 
 function openLinkedin() {
-    window.open("https://www.linkedin.com/in/austin-chaszar-778500159/");
+    window.open("https://www.linkedin.com/in/austin-chaszar/");
 }
 
 function myFunction() {
