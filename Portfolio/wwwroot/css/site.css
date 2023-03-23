@@ -55,8 +55,7 @@ section::after {
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    border: solid;
-    border-color: white;
+    
 }
 
 .flex-container > div {
