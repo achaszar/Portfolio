@@ -111,3 +111,18 @@ section::after {
         flex-direction: row;
     }
 }
+
+.button {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: blue;
+}

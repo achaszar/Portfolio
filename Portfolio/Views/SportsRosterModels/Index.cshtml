@@ -6,7 +6,7 @@
 
 <div class="entirePage">
 
-<h1>Index</h1>
+<h1>Baseball Roster</h1>
 
 <p>
     <a asp-action="Create"  class="btn btn-primary">Create New</a>
@@ -65,9 +65,9 @@
                 @Html.DisplayFor(modelItem => item.Throws)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id" style="color:white">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id" style="color:white">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id" style="color:white">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" style="color:white" class="button button1">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id" style="color:white" class="button button1">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id" style="color:white" class="button button1">Delete</a>
             </td>
         </tr>
 }

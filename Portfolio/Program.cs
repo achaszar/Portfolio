@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Portfolio.Data;
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddDbContext<PortfolioContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("PortfolioContext") ?? throw new InvalidOperationException("Connection string 'PortfolioContext' not found.")));
 

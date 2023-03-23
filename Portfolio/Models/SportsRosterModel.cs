@@ -1,4 +1,6 @@
-﻿namespace Portfolio.Models
+﻿using Portfolio.Controllers;
+
+namespace Portfolio.Models
 {
     public class SportsRosterModel
     {
