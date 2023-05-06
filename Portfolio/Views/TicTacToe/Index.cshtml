@@ -1,26 +1,53 @@
 ﻿
 @{
 }
+<html>
 
+    <h1 style="text-align:center">Welcome To Tic-Tac-Toe</h1>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
 
 <body>
-    <h1 style="text-align:center">Welcome To Tic-Tac-Toe</h1>
-    <div class="flex-container">
-        <div>
-           <img src="~/TTTImages/TicTacToeBoard.png" alt="tttBoard" width="500" height="500" usemap="#tttboard">
-            <map name="tttboard">
-                <area shape="rect" coords="0, 0, 170, 170" value="topLeft" style="cursor: pointer" />
-                <area shape="rect" coords="175, 0, 330, 170" value="topCenter" style="cursor: pointer" />
-                <area shape="rect" coords="335, 0, 500, 170" value="topRight" style="cursor: pointer" />
+	@*
+	<div style="float:left; text-align:center;">
+	<h1>Player X wins</h1>
+	<input type="text" value="0"/>
+	</div>
+	<div style="float:right; text-align:center;">
+	<h1>Player O wins</h1>
+	<input type="text" value="0"/>
+	</div>
+	*@
+		<div id="main">
+			<p id="ins">
+				First Player starts as <b>Player X</b><br>And<br>Second Player as <b>Player O</b>
+			</p>
+		<img src="~/TTTImages/TicTacToeBoard.png" alt="tttBoard" class="board" width="500" height="500" usemap="#tttboard">
+		
+		<div class="board">
+			<input type="text" class="LT1" id="b1" onclick="myfunc_3(); myfunc();" readonly>
+		
+			<input type="text" class="LT2" id="b2" onclick="myfunc_4(); myfunc();" readonly>
 
-                <area shape="rect" coords="0, 175, 170, 330" value="middleLeft" style="cursor: pointer" />
-                <area shape="rect" coords="175, 175, 330, 330" value="MiddelCenter" style="cursor: pointer" />
-                <area shape="rect" coords="335, 175, 500, 330" value="MiddleRight" style="cursor: pointer" />
+			<input type="text" class="LT3" id="b3" onclick="myfunc_5(); myfunc();" readonly>
 
-                <area shape="rect" coords="0, 330, 170, 330" value="middleLeft" style="cursor: pointer" />
-                <area shape="rect" coords="175, 175, 330, 330" value="MiddelCenter" style="cursor: pointer" />
-                <area shape="rect" coords="335, 175, 500, 330" value="MiddleRight" style="cursor: pointer" />
-            </map>
-        </div>
-    </div>
+		    <input type="text" class="LT4" id="b4" onclick="myfunc_6(); myfunc();" readonly>
+
+			<input type="text" class="LT5" id="b5" onclick="myfunc_7(); myfunc();" readonly>
+
+			<input type="text" class="LT6" id="b6" onclick="myfunc_8(); myfunc();" readonly>
+
+			<input type="text" class="LT7" id="b7" onclick="myfunc_9(); myfunc();" readonly>
+
+			<input type="text" class="LT8" id="b8" onclick="myfunc_10();myfunc();" readonly>
+
+			<input type="text" class="LT9" id="b9" onclick="myfunc_11();myfunc();" readonly>
+		</div>
+		
+			<!-- Grid end here -->
+		    <p id="print"</p>
+			<button id="but" class="resbut" onclick="myfunc_2()">RESET</button>	
 </body>
+</html>

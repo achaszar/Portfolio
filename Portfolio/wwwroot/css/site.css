@@ -55,7 +55,6 @@ section::after {
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    
 }
 
 .flex-container > div {
@@ -124,4 +123,137 @@ section::after {
 
 .button1 {
     background-color: blue;
+}
+
+.board {
+    position: relative;
+    z-index: 2;
+}
+
+.LT1 {
+    position: relative;
+    z-index: 1;
+    top: -440px;
+    left: 170px;
+}
+
+.LT2 {
+    position: relative;
+    z-index: 1;
+    top: -440px;
+    left: 254px;
+}
+
+.LT3 {
+    position: relative;
+    z-index: 1;
+    top: -440px;
+    left: 330px;
+}
+
+.LT4 {
+    position: relative;
+    z-index: 1;
+    top: -275px;
+    left: -85px;
+}
+
+.LT5 {
+    position: relative;
+    z-index: 1;
+    top: -275px;
+    left: 0px;
+}
+
+.LT6 {
+    position: relative;
+    z-index: 1;
+    top: -275px;
+    left: 75px;
+}
+
+.LT7 {
+    position: relative;
+    z-index: 1;
+    top: -110px;
+    left: -337px;
+}
+
+.LT8 {
+    position: relative;
+    z-index: 1;
+    top: -110px;
+    left: -252px;
+}
+
+.LT9 {
+    position: relative;
+    z-index: 1;
+    top: -110px;
+    left: -175px;
+}
+
+.resbut {
+    position: relative;
+    z-index: 1;
+    top: -525px;
+    left: 400px;
+}
+
+.whosTurn {
+    position: relative;
+    z-index: 1;
+    top: 125px;
+    left: 400px;
+}
+
+/* CSS Code */
+/* Heading */
+
+
+/* 3*3 Grid */
+#b1, #b2, #b3, #b4, #b5,
+#b6, #b7, #b8, #b9 {
+    width: 80px;
+    height: 52px;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 6px;
+    font-size: 30px;
+    text-align: center;
+    color:azure;
+}
+
+/* Reset Button */
+#but {
+    box-sizing: border-box;
+    width: 95px;
+    height: 40px;
+    border: 1px solid dodgerblue;
+    margin: auto;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Player turn space */
+#print {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dodgerblue;
+    font-size: 30px;
+}
+
+/* Main Container */
+#main {
+    text-align: center;
+}
+
+/* Game Instruction Text */
+#ins {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 17px;
 }

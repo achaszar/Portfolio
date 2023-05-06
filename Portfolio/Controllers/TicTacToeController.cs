@@ -13,6 +13,7 @@ namespace Portfolio.Controllers
 
         public IActionResult TicTacToeBoard(int wins, int loss, int tie)
         {
+            int win = 0;
             return View("Index");
         }
     }
