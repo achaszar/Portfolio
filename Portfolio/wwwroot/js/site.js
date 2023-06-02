@@ -14,7 +14,6 @@ function myFunction() {
         })
 }
 
-
 //Tic-tac-toe game
 function myfunc() {
 
@@ -228,8 +227,6 @@ function myfunc() {
 
 function myfunc_2() {
 	location.reload();
-	
-
 }
 
 flag = 1;
